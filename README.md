@@ -1,2 +1,0 @@
-# codemntask
-Created with CodeSandbox

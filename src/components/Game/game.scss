@@ -1,0 +1,35 @@
+.game-container{
+    position: relative;
+    width:100%;
+    height:100%;
+    .city-container{
+        position: relative;
+        width:100%;
+        height:100%;
+        z-index: 6;
+        .map-container{
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            top: 0;
+            left: 0;
+            transition: all 100ms;
+            .pin{
+                width: 80px;
+                height: 80px;
+                //border-radius: 50%;
+                //background-color: rgba(255,255,255,0.5);
+                position: absolute;
+                animation: bounce 1.5s infinite;
+                //box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.72), 2px 2px 25px 5px rgba(0, 0, 0, 0.7);
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                filter: drop-shadow(5px 5px 20px #000);
+                transition: all 300ms;
+                animation: bounce 1.5s infinite;
+            }
+        }
+    }
+}

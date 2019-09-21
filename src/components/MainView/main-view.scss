@@ -1,0 +1,51 @@
+
+.main-container{
+    height: 100vh;
+    width:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    overscroll-behavior: none;
+    //cursor: none;
+    .custom-cursor{
+       position: absolute;
+        top: 50px;
+        left:50px;
+        height:0;
+        width:0;
+        opacity: 0.6;
+        filter: drop-shadow(2px 2px 2px #fff);
+        &:after{
+            content: "";
+            display: block;
+            height:50px;
+            width:50px;
+            background-image: url('/images/cursor-icon.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+
+        }
+}
+.full-screen-btn{
+    width: 20px;
+    height:20px;
+    position: fixed;
+    top:15px;
+    right:15px;
+    z-index: 99;
+    background: none;
+    outline: none;
+    border:none;
+    padding: 0;
+    filter: drop-shadow(1px 1px 0px #fff);
+    display: none;
+    @media screen and (max-width:800px) {
+        display: inline-block;
+    }
+}
+}
+
